@@ -1,0 +1,80 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.commons.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons"
+	controllerName="sap.training.view.Formatters"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<TextView text="{/employee/gender}" />
+	
+	<TextView text="{
+	            path: '/employee/gender',
+	            formatter: 'sap.training.util.Formatter.salutation'
+	            }"
+    />
+    
+    <Image src="{
+	            path: '/employee/gender',
+	            formatter: 'sap.training.util.Formatter.genderIcon'
+	            }"
+    />
+    
+    <html:br/>
+  
+	<TextView text="{/employee/gender}" />
+
+	<TextView text="{
+	            path: '/employee/gender',
+	            formatter: '.salutation'
+	            }"
+    />
+  
+    <Image src="{
+	            path: '/employee/gender',
+	            formatter: '.genderIcon'
+	            }"
+    />
+
+</mvc:View>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

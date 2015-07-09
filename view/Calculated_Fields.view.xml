@@ -1,0 +1,47 @@
+<mvc:View xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.commons.layout"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.ui.commons"
+	controllerName="sap.training.view.Calculated_Fields"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	
+	<TextView text="Hello {/employee/firstName} {/employee/lastName}"/>
+	
+	<html:br/>
+	 
+    <TextView text="Date of Birth:
+                {path: '/employee/birthday', 
+                 type: 'sap.ui.model.type.Date',
+                 formatOptions: { source: {pattern: 'yyyy/MM/dd'}} }
+                 (Age:
+                 {path: '/employee/birthday', formatter: '.age'})
+                 "/>
+                 
+    <html:br/>
+	            
+	 <TextView text="{
+	    parts: [  {path:'/employee/lastName'},
+	              {path: '/employee/birthday',
+                   type: 'sap.ui.model.type.Date',
+                   formatOptions: { source: {pattern: 'yyyy/MM/dd'}}}
+                ]
+                     }"/>    
+   
+    <html:br/>
+	
+     <TextView text="{parts:[ {path:'/employee/gender'},
+                              {path:'/employee/firstName'},
+                              {path:'/employee/lastName'}
+                            ],
+                      formatter: '.greeting'
+                      }"/>   
+                    
+	<html:br/>
+    
+	<TextView text="Hello
+                {path: '/employee/gender',
+                 formatter: 'sap.training.util.Formatter.salutation' }
+                {/employee/firstName}
+                {/employee/lastName}"/>
+              
+</mvc:View>
