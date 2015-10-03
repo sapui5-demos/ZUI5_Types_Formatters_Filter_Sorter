@@ -1,5 +1,4 @@
 <mvc:View xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.commons.layout"
 	xmlns:mvc="sap.ui.core.mvc"
 	xmlns="sap.ui.commons"
 	controllerName="sap.training.view.Formatters"
@@ -36,45 +35,3 @@
     />
 
 </mvc:View>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

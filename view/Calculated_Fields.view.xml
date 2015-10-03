@@ -37,11 +37,5 @@
                       }"/>   
                     
 	<html:br/>
-    
-	<TextView text="Hello
-                {path: '/employee/gender',
-                 formatter: 'sap.training.util.Formatter.salutation' }
-                {/employee/firstName}
-                {/employee/lastName}"/>
               
 </mvc:View>
