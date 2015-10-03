@@ -1,8 +1,6 @@
 <mvc:View xmlns:core="sap.ui.core"
-	xmlns:l="sap.ui.commons.layout"
 	xmlns:f="sap.ui.layout.form"
 	xmlns:mvc="sap.ui.core.mvc"
-	xmlns:ux3="sap.ui.ux3"
 	xmlns="sap.ui.commons"
 	controllerName="sap.training.view.Datatypes"
 	xmlns:html="http://www.w3.org/1999/xhtml">
@@ -19,11 +17,20 @@
                                  formatOptions: {groupingEnabled: true, groupingSeparator: '.'},
                                  constraints: {minimum: 1, maximum: 5000000}
                                 }"
+            />
+            <!--
+            <TextField  id="myNumOfEmployeesField"
+                        value="{ path: '/company/numOfEmployees',
+                                 type: 'sap.ui.model.type.Integer',
+                                 formatOptions: {groupingEnabled: true, groupingSeparator: '.'},
+                                 constraints: {minimum: 1, maximum: 5000000}
+                                }"
                         parseError="onInputError"
                         validationError="onInputError"
                         validationSuccess="onValidationSuccess"
             />
             <TextView id="myTextView" text="" design="Bold" semanticColor="Critical"/>
+            -->
 	                
 	   </f:content>
 	</f:SimpleForm>
@@ -41,7 +48,6 @@
                             formatOptions: { source: {pattern: 'yyyy/MM/dd'}, style: 'medium' }
                             }"
             />
-	                
 	       <Label text="Salary Level"/>
 		   <TextField id="mySalaryLevelField"
 	                value="{ path: '/employee/salaryLevel',
